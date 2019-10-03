@@ -9,8 +9,6 @@
 #include <stdio.h>
 
 
-
-
 int main(int argc, const char * argv[]) {
     // insert code here...
     int sum = 0;

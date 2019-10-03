@@ -4,7 +4,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Component implements InitializingBean {
+public class MyComponent implements InitializingBean {
 
 
     @Override
