@@ -3,7 +3,7 @@ package com.yechangqing.demo.java.springboot.bean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class MyBean implements InitializingBean {
 
     @Override
