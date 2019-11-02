@@ -1,4 +1,9 @@
 rootProject.name = "java-demo"
-include("springboot-demo", "lib-demo", "mycat-demo", "netty-demo")
+include(
+  ":springboot-demo:springboot-redis",
+  "lib-demo",
+  "mycat-demo",
+  "netty-demo"
+)
 
 
