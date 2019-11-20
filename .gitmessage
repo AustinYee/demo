@@ -1,0 +1,28 @@
+
+# feat: 新的 功能
+# fix: 修复 bug
+# docs: 只是文档的更改
+# style: 不影响代码含义的更改 (例如空格、格式化、少了分号)
+# refactor: 既不是修复 bug 也不是添加新功能的代码更改
+# perf: 提高性能的代码更改
+# test: 添加或修正测试
+# chore: 对构建或者辅助工具的更改，例如生成文档
+:bug: Fixing a bug
+:fire: Removing code or files.
+:zap: Improving performance.
+:art: Improving structure / format of the code.
+:sparkles: Introducing new features.
+:ambulance: Critical hotfix.
+:pencil: Writing docs.
+:white_check_mark: Updating tests.
+:pushpin: Pinning dependencies to specific versions.
+:arrow_up: Upgrading dependencies.
+:green_heart: Fixing CI Build.
+:bookmark: Releasing <Version> tags.
+:rotating_light: Removing linter warnings.
+:recycle: Refactoring code.
+:wrench: Changing configuration files.
+:heavy_plus_sign: Adding a dependency.
+:heavy_minus_sign: Removing a dependency.
+:truck: Moving or renaming files
+:alien: Updating code due to external API changes.
