@@ -24,6 +24,7 @@ version = "1.0.0-SNAPSHOT"
 
 
 allprojects {
+
     apply(plugin = "java")
     repositories {
         maven("http://maven.aliyun.com/nexus/content/groups/public/")

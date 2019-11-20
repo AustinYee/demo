@@ -3,7 +3,9 @@ allprojects {
   apply(plugin = "io.spring.dependency-management")
 
   dependencies {
-    compile("org.springframework.boot", "spring-boot-starter")
+    compile("org.springframework.boot", "spring-boot-starter") {
+      exclude(group = "org.springframework.boot", module = "spring-boot-starter-logging")
+    }
     compile("org.springframework.boot", "spring-boot-starter-test")
     testCompile("junit", "junit", "4.12")
   }

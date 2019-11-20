@@ -2,6 +2,23 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yechangqing.java-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yechangqing.java-demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yechangqing.java-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yechangqing.java-demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-demo/demo.java-demo.basic-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-demo/demo.java-demo.basic-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-demo/demo.java-demo.basic-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-demo/demo.java-demo.basic-demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-demo/demo.java-demo.basic-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-demo/demo.java-demo.basic-demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycat-demo/demo.java-demo.mycat-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/mycat-demo/demo.java-demo.mycat-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycat-demo/demo.java-demo.mycat-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mycat-demo/demo.java-demo.mycat-demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycat-demo/demo.java-demo.mycat-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mycat-demo/demo.java-demo.mycat-demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty-demo/demo.java-demo.netty-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/netty-demo/demo.java-demo.netty-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty-demo/demo.java-demo.netty-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/netty-demo/demo.java-demo.netty-demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty-demo/demo.java-demo.netty-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/netty-demo/demo.java-demo.netty-demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/demo.java-demo.springboot-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/demo.java-demo.springboot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/demo.java-demo.springboot-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/demo.java-demo.springboot-demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/demo.java-demo.springboot-demo.springboot-kafka.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/demo.java-demo.springboot-demo.springboot-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-redis/demo.java-demo.springboot-demo.springboot-redis.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-redis/demo.java-demo.springboot-demo.springboot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-web/demo.java-demo.springboot-demo.springboot-web.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-web/demo.java-demo.springboot-demo.springboot-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/demo.java-demo.springboot-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/demo.java-demo.springboot-demo.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-demo.iml" filepath="$PROJECT_DIR$/java-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-demo/java-demo.basic-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-demo/java-demo.basic-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-demo/java-demo.basic-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-demo/java-demo.basic-demo.main.iml" />
@@ -17,6 +34,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty-demo/java-demo.netty-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/netty-demo/java-demo.netty-demo.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty-demo/java-demo.netty-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/netty-demo/java-demo.netty-demo.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/java-demo.springboot-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/java-demo.springboot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/lib-demo/java-demo.springboot-demo.lib-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/lib-demo/java-demo.springboot-demo.lib-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/lib-demo/java-demo.springboot-demo.lib-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/lib-demo/java-demo.springboot-demo.lib-demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/lib-demo/java-demo.springboot-demo.lib-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/lib-demo/java-demo.springboot-demo.lib-demo.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/java-demo.springboot-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/java-demo.springboot-demo.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/java-demo.springboot-demo.springboot-kafka.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/java-demo.springboot-demo.springboot-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/java-demo.springboot-demo.springboot-kafka.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/java-demo.springboot-demo.springboot-kafka.main.iml" />
@@ -29,7 +49,13 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-web/java-demo.springboot-demo.springboot-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-web/java-demo.springboot-demo.springboot-web.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/java-demo.springboot-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/java-demo.springboot-demo.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/java-demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/springboot-kafka.java-demo.springboot-demo.springboot-kafka.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/springboot-kafka.java-demo.springboot-demo.springboot-kafka.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/springboot-kafka.java-demo.springboot-demo.springboot-kafka.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-kafka/springboot-kafka.java-demo.springboot-demo.springboot-kafka.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-redis/springboot-redis.java-demo.springboot-demo.springboot-redis.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-redis/springboot-redis.java-demo.springboot-demo.springboot-redis.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-redis/springboot-redis.java-demo.springboot-demo.springboot-redis.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-redis/springboot-redis.java-demo.springboot-demo.springboot-redis.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-web.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-web/springboot-web.java-demo.springboot-demo.springboot-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-web/springboot-web.java-demo.springboot-demo.springboot-web.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-web/springboot-web.java-demo.springboot-demo.springboot-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-demo/springboot-web/springboot-web.java-demo.springboot-demo.springboot-web.test.iml" />
     </modules>
   </component>
 </project>

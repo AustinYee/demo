@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,10 +11,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/basic-demo" />
-            <option value="$PROJECT_DIR$/lib-demo" />
             <option value="$PROJECT_DIR$/mycat-demo" />
             <option value="$PROJECT_DIR$/netty-demo" />
             <option value="$PROJECT_DIR$/springboot-demo" />
+            <option value="$PROJECT_DIR$/springboot-demo/lib-demo" />
             <option value="$PROJECT_DIR$/springboot-demo/springboot-kafka" />
             <option value="$PROJECT_DIR$/springboot-demo/springboot-redis" />
             <option value="$PROJECT_DIR$/springboot-demo/springboot-web" />
