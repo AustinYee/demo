@@ -19,6 +19,6 @@ public class Consumer1 {
             Thread.sleep(5000 - time);
         }
         System.out.println(record.timestamp() + ":" + record);
-        System.out.println("1:"+num);
+        System.out.println("1:" + num);
     }
 }

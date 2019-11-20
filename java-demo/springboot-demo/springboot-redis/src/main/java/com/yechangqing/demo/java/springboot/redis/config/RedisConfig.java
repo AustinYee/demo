@@ -1,4 +1,5 @@
 package com.yechangqing.demo.java.springboot.redis.config;
+
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.caffeine.CaffeineCacheManager;
@@ -12,6 +13,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
+
 import java.io.Serializable;
 
 @Configuration
@@ -28,17 +30,13 @@ public class RedisConfig extends CachingConfigurerSupport {
 
     @Bean(Cachekey.REDIS_CACHE_MANAGET)
     @Primary
-    public RedisCacheManager redisCacheManager(LettuceConnectionFactory connectionFactory){
-         return RedisCacheManager.builder(connectionFactory)
-             .cacheDefaults(RedisCacheConfiguration.defaultCacheConfig()
-                 .serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(new StringRedisSerializer()))
-                 .serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(new GenericJackson2JsonRedisSerializer())))
-                 .build();
+    public RedisCacheManager redisCacheManager(LettuceConnectionFactory connectionFactory) {
+        return RedisCacheManager.builder(connectionFactory).cacheDefaults(RedisCacheConfiguration.defaultCacheConfig().serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(new StringRedisSerializer())).serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(new GenericJackson2JsonRedisSerializer()))).build();
 
     }
 
     @Bean(Cachekey.LOCAL_CACHE_MANAGET)
-    public CacheManager redisCacheManager(){
+    public CacheManager redisCacheManager() {
         return new CaffeineCacheManager();
     }
 

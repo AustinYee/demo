@@ -6,7 +6,7 @@ spring:
     bootstrap-servers: yechangqing.com:9092
     consumer:
       group-id: consumer-local
-    listener:  
+    listener:
 logging:
   level:
     root: info

@@ -16,7 +16,7 @@ public class ApplicationTest {
     private StudentService studentService;
 
     @Test
-    public void test(){
+    public void test() {
         Student s = new Student();
         s.setName("aa");
         Student result = studentService.test(s, "bbaa");

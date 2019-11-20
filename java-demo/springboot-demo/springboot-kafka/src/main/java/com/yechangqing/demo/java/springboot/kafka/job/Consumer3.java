@@ -14,11 +14,11 @@ public class Consumer3 {
     public void consumer(ConsumerRecord<String, String> record) throws InterruptedException {
         long time = System.currentTimeMillis() - record.timestamp();
         num.incrementAndGet();
-        if(time < 5000){
+        if (time < 5000) {
             System.out.println("*********线程等待***************");
             Thread.sleep(5000 - time);
         }
-        System.out.println(record.timestamp()+":"+record);
-        System.out.println("3:"+num);
+        System.out.println(record.timestamp() + ":" + record);
+        System.out.println("3:" + num);
     }
 }

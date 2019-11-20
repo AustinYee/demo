@@ -9,8 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         List array = new ArrayList<>(20);
-        for(int i=0;i<15;i++){
-          array.add(i);
+        for (int i = 0; i < 15; i++) {
+            array.add(i);
         }
 
         AtomicInteger x = new AtomicInteger(0);

@@ -11,11 +11,6 @@ public class Application {
 
     private static KafkaTemplate<String, String> staticKafkaTemplate;
 
-    @Autowired
-    public void setKafkaTemplate(KafkaTemplate<String, String> kafkaTemplate) {
-        staticKafkaTemplate = kafkaTemplate;
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
         new Thread(() -> {
@@ -28,6 +23,11 @@ public class Application {
                 System.out.println("发送成功");
             }
         }).start();
+    }
+
+    @Autowired
+    public void setKafkaTemplate(KafkaTemplate<String, String> kafkaTemplate) {
+        staticKafkaTemplate = kafkaTemplate;
     }
 
 }
