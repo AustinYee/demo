@@ -12,5 +12,5 @@ import (
 
 //运行该文件 'go run p01_hello.go'
 func main() {
-	fmt.Print("hello world")
+	fmt.Print("web world")
 }
