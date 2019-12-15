@@ -1,5 +1,6 @@
 rootProject.name = "java-demo"
 include(
+  ":springboot-demo:springboot-jpa",
   ":springboot-demo:springboot-redis",
   ":springboot-demo:springboot-kafka",
   ":springboot-demo:springboot-web",

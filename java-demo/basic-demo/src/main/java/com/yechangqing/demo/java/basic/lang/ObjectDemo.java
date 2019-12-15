@@ -12,5 +12,7 @@ public class ObjectDemo {
     public static void main(String[] args) {
         Parent obj = new Child();
         System.out.println(obj.getClass().getName());
+        System.out.println(obj.getClass().getTypeName());
     }
+
 }
