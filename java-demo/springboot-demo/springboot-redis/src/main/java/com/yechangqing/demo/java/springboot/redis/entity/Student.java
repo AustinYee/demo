@@ -4,7 +4,12 @@ import java.io.Serializable;
 
 public class Student implements Serializable {
     private String name;
-    private int age1;
+    private int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public String getName() {
         return name;
@@ -14,16 +19,16 @@ public class Student implements Serializable {
         this.name = name;
     }
 
-    public Integer getAge1() {
-        return age1;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setAge1(Integer age) {
-        this.age1 = age;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     @Override
     public String toString() {
-        return "Student{" + "name:'" + name + ',' + ", age1:" + age1 + '}';
+        return "Student{" + "name:'" + name + ',' + ", age1:" + age + '}';
     }
 }

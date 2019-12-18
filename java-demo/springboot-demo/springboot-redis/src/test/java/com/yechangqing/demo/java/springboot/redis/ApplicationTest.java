@@ -1,6 +1,5 @@
 package com.yechangqing.demo.java.springboot.redis;
 
-import com.yechangqing.demo.java.springboot.redis.entity.Student;
 import com.yechangqing.demo.java.springboot.redis.service.StudentService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,9 +16,7 @@ public class ApplicationTest {
 
     @Test
     public void test() {
-        Student s = new Student();
-        s.setName("aa");
-        Student result = studentService.test(s, "bbaa");
+        studentService.test("test", 11);
     }
 
 }
