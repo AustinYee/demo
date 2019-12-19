@@ -1,6 +1,8 @@
 rootProject.name = "java-demo"
 include(
+  ":springboot-demo:hystrix",
   ":springboot-demo:springboot-jpa",
+  ":springboot-demo:springboot-basic",
   ":springboot-demo:springboot-redis",
   ":springboot-demo:springboot-kafka",
   ":springboot-demo:springboot-web",
@@ -9,6 +11,3 @@ include(
   "mycat-demo",
   "netty-demo"
 )
-
-
-
