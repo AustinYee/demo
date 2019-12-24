@@ -1,6 +1,6 @@
 package com.yechangqing.demo.java.springboot.basic;
 
-public class Event {
+public class EventSource {
     private String name;
     private String msg;
 
