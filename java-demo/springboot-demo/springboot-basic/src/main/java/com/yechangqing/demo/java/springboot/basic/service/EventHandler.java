@@ -10,5 +10,6 @@ public class EventHandler {
     @EventListener
     public void handle(EventSource eventSource){
         System.out.println(eventSource);
+        System.out.println("received");
     }
 }
