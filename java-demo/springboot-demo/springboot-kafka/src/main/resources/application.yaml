@@ -1,12 +1,9 @@
-server:
-  port: 8080
-
 spring:
   kafka:
     bootstrap-servers: yechangqing.com:9092
     consumer:
-      group-id: consumer-local
+      group-id: kafka-demo
     listener:
 logging:
   level:
-    root: info
+    root: INFO

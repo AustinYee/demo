@@ -5,17 +5,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
-
-
     @GetMapping("/test1")
     public String test1() throws InterruptedException {
-        Thread.sleep(3000);
-        return "success";
+        throw new RuntimeException("error");
     }
 
     @GetMapping("/test2")
     public String test2() throws InterruptedException {
-        Thread.sleep(1000);
         return "success";
     }
 }
