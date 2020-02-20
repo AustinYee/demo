@@ -1,6 +1,4 @@
 import subprocess
-import json
-
 
 def get_targets(path: str, name: str):
     command = 'find ' + path + ' -name ' + name
