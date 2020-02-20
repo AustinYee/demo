@@ -9,14 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class UserRepositoryTest extends SpringbootApplicationTest {
 
     @Autowired
-    private UserRepository userRepositoryTest;
+    private UserRepository userRepository;
 
     @Test
     public void save(){
         UserEntity user = new UserEntity();
         user.setUserName("changqing");
         user.setEmail("a@b.com");
-        userRepositoryTest.save(user);
+        userRepository.save(user);
         Long result =  user.getId();
         System.out.println(result);
     }
