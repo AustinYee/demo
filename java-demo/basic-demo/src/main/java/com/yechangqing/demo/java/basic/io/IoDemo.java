@@ -20,6 +20,5 @@ public class IoDemo {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

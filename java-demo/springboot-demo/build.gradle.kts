@@ -1,13 +1,13 @@
-allprojects {
+subprojects {
   apply(plugin = "org.springframework.boot")
   apply(plugin = "io.spring.dependency-management")
 
   dependencies {
     compile("org.springframework.boot", "spring-boot-starter")
     compile("org.springframework.boot", "spring-boot-starter-test")
-    testCompile("junit", "junit", "4.12")
+    testCompile("org.junit.jupiter", "junit-jupiter-api", "5.6.0")
   }
   configure<JavaPluginConvention> {
-    sourceCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
   }
 }
