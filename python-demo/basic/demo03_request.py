@@ -3,6 +3,7 @@ import datetime
 
 import requests
 
+
 def main():
     startDate = datetime.date(2020, 2, 20)
     today = datetime.date.today()
