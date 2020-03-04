@@ -1,3 +1,3 @@
 dependencies {
-    implementation(project(":springboot-demo:module-demo"))
+    implementation("org.springframework.boot:spring-boot-starter-aop")
 }
