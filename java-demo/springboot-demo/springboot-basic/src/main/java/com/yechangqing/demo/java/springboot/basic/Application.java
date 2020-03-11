@@ -11,20 +11,19 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
-    @Autowired
-    private Product product;
+  @Autowired private Product product;
 
-    @Bean
-    public MyFactoryBean create() throws Exception {
-        return new MyFactoryBean();
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(Application.class, args);
+  }
 
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class,  args);
-    }
+  @Bean
+  public MyFactoryBean create() throws Exception {
+    return new MyFactoryBean();
+  }
 
-    @Override
-    public void run(String... args) throws Exception {
-        product.test();
-    }
+  @Override
+  public void run(String... args) throws Exception {
+    product.test();
+  }
 }

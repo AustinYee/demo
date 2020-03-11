@@ -18,26 +18,34 @@ import java.io.Serializable;
 
 @Configuration
 public class RedisConfig extends CachingConfigurerSupport {
-    @Bean
-    public RedisTemplate<String, Serializable> redisTemplate(LettuceConnectionFactory connectionFactory) {
-        RedisTemplate<String, Serializable> redisTemplate = new RedisTemplate<>();
-        redisTemplate.setKeySerializer(new StringRedisSerializer());
-        redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
-        redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
-        redisTemplate.setConnectionFactory(connectionFactory);
-        return redisTemplate;
-    }
+  @Bean
+  public RedisTemplate<String, Serializable> redisTemplate(
+      LettuceConnectionFactory connectionFactory) {
+    RedisTemplate<String, Serializable> redisTemplate = new RedisTemplate<>();
+    redisTemplate.setKeySerializer(new StringRedisSerializer());
+    redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+    redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
+    redisTemplate.setConnectionFactory(connectionFactory);
+    return redisTemplate;
+  }
 
-    @Bean(Cachekey.REDIS_CACHE_MANAGET)
-    @Primary
-    public RedisCacheManager redisCacheManager(LettuceConnectionFactory connectionFactory) {
-        return RedisCacheManager.builder(connectionFactory).cacheDefaults(RedisCacheConfiguration.defaultCacheConfig().serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(new StringRedisSerializer())).serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(new GenericJackson2JsonRedisSerializer()))).build();
+  @Bean(Cachekey.REDIS_CACHE_MANAGET)
+  @Primary
+  public RedisCacheManager redisCacheManager(LettuceConnectionFactory connectionFactory) {
+    return RedisCacheManager.builder(connectionFactory)
+        .cacheDefaults(
+            RedisCacheConfiguration.defaultCacheConfig()
+                .serializeKeysWith(
+                    RedisSerializationContext.SerializationPair.fromSerializer(
+                        new StringRedisSerializer()))
+                .serializeValuesWith(
+                    RedisSerializationContext.SerializationPair.fromSerializer(
+                        new GenericJackson2JsonRedisSerializer())))
+        .build();
+  }
 
-    }
-
-    @Bean(Cachekey.LOCAL_CACHE_MANAGET)
-    public CacheManager redisCacheManager() {
-        return new CaffeineCacheManager();
-    }
-
+  @Bean(Cachekey.LOCAL_CACHE_MANAGET)
+  public CacheManager redisCacheManager() {
+    return new CaffeineCacheManager();
+  }
 }

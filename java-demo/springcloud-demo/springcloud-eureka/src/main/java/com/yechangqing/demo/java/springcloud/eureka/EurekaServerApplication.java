@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EurekaServerApplication {
 
+  public static void main(String[] args) {
+    SpringApplication.run(EurekaServerApplication.class, args);
+  }
+
   @RequestMapping("/")
   public String home() {
     return "Hello World";
-  }
-
-  public static void main(String[] args) {
-    SpringApplication.run(EurekaServerApplication.class, args);
   }
 }

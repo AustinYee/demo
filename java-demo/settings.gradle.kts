@@ -1,14 +1,19 @@
 rootProject.name = "java-demo"
 include(
-    ":springboot-demo:springboot-jpa",
-    ":springboot-demo:springboot-basic",
-    ":springboot-demo:springboot-redis",
-    ":springboot-demo:springboot-kafka",
-    ":springboot-demo:springboot-mongo",
-    ":springboot-demo:springboot-web",
-    ":springboot-demo:module-demo",
-    ":springcloud-demo:springcloud-eureka",
-    "basic-demo",
-    "mycat-demo",
-    "netty-demo"
+        ":springboot-demo:springboot-jpa",
+        ":springboot-demo:springboot-mybatis",
+        ":springboot-demo:springboot-basic",
+        ":springboot-demo:springboot-redis",
+        ":springboot-demo:springboot-kafka",
+        ":springboot-demo:springboot-mongo",
+        ":springboot-demo:springboot-web",
+        ":springboot-demo:springboot-cache",
+        ":springboot-demo:springboot-aop",
+        ":springboot-demo:module-demo",
+        ":springcloud-demo:springcloud-eureka",
+        "basic8-demo",
+        "basic11-demo",
+        "mycat-demo",
+        "netty-demo",
+        "java-advance"
 )

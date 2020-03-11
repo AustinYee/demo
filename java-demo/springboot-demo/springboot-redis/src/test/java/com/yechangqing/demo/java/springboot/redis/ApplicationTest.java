@@ -11,12 +11,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 public class ApplicationTest {
 
-    @Autowired
-    private StudentService studentService;
+  @Autowired private StudentService studentService;
 
-    @Test
-    public void test() {
-        studentService.test("test", 11);
-    }
-
+  @Test
+  public void test() {
+    studentService.test("test", 11);
+  }
 }

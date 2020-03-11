@@ -11,14 +11,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = Application.class)
 public class ApplicationTest {
 
-    @Autowired
-    private ApplicationEventPublisher applicationEventPublisher;
+  @Autowired private ApplicationEventPublisher applicationEventPublisher;
 
-    @Test
-    public void eventTest(){
-        EventSource event = new EventSource();
-        event.setName("name");
-        event.setMsg("msg");
-        applicationEventPublisher.publishEvent(event);
-    }
+  @Test
+  public void eventTest() {
+    EventSource event = new EventSource();
+    event.setName("name");
+    event.setMsg("msg");
+    applicationEventPublisher.publishEvent(event);
+  }
 }

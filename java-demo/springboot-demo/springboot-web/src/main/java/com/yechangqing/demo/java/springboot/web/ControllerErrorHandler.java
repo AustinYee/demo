@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 @ControllerAdvice
 public class ControllerErrorHandler {
 
-    @ExceptionHandler(Exception.class)
-    public String handle(Exception e, HttpServletResponse response){
-        response.setStatus(HttpStatus.BAD_REQUEST.value());
-        return "error";
-    }
+  @ExceptionHandler(Exception.class)
+  public String handle(Exception e, HttpServletResponse response) {
+    response.setStatus(HttpStatus.BAD_REQUEST.value());
+    return "error";
+  }
 }

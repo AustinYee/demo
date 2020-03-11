@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyComponent implements InitializingBean {
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("Init component");
-    }
+  @Override
+  public void afterPropertiesSet() throws Exception {
+    System.out.println("Init component");
+  }
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Product2 {
 
-    public void test(){
-        System.out.println("test2");
-    }
+  public void test() {
+    System.out.println("test2");
+  }
 }

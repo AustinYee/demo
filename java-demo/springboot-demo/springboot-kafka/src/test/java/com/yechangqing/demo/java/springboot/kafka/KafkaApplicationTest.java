@@ -13,24 +13,22 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = KafkaApplication.class)
 public class KafkaApplicationTest {
 
-    private static final String TOPIC = "test-topic";
+  private static final String TOPIC = "test-topic";
 
-    @Autowired
-    private KafkaTemplate<String, String> kafkaTemplate;
+  @Autowired private KafkaTemplate<String, String> kafkaTemplate;
 
+  @KafkaListener(topics = TOPIC, groupId = "kafka-demo")
+  public void consumer(ConsumerRecord<String, String> record) {
+    System.out.println(record);
+  }
 
-    @KafkaListener(topics = TOPIC, groupId = "kafka-demo")
-    public void consumer(ConsumerRecord<String, String> record){
-        System.out.println(record);
+  @Test
+  public void test() {
+    kafkaTemplate.send(TOPIC, "test");
+    try {
+      Thread.sleep(10000);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
     }
-
-    @Test
-    public void test(){
-        kafkaTemplate.send(TOPIC, "test");
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+  }
 }

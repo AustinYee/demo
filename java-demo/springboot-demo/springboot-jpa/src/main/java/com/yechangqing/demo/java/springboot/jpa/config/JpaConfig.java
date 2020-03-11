@@ -7,5 +7,4 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @Configuration
 @EnableJpaAuditing
 @EnableJpaRepositories(basePackages = {"com.yechangqing.demo.java.springboot.jpa.dao"})
-public class JpaConfig {
-}
+public class JpaConfig {}

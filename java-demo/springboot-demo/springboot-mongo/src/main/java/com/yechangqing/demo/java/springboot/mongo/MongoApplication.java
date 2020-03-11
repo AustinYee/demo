@@ -20,7 +20,7 @@ public class MongoApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) {
-//    var result = mongoTemplate.find(Query.query(Criteria.where("age").is(22)), Student.class);
-//    System.out.println(result);
+    //    var result = mongoTemplate.find(Query.query(Criteria.where("age").is(22)), Student.class);
+    //    System.out.println(result);
   }
 }
