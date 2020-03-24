@@ -9,6 +9,7 @@ include(
         ":springboot-demo:springboot-web",
         ":springboot-demo:springboot-cache",
         ":springboot-demo:springboot-aop",
+        ":springboot-demo:springboot-sharding-jdbc",
         ":springboot-demo:module-demo",
         ":springcloud-demo:springcloud-eureka",
         "basic8-demo",
