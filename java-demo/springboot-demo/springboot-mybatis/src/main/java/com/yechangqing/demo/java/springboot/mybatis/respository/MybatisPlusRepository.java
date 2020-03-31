@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.springboot.mybatis;
+package com.yechangqing.demo.java.springboot.mybatis.respository;
 
-public class repository {
+public class MybatisPlusRepository {
 }
