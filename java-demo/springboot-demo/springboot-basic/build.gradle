@@ -1,2 +1,3 @@
 dependencies {
+    apiElements project(':springboot-demo:module-demo')
 }

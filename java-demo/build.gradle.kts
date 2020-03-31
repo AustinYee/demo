@@ -14,6 +14,7 @@ buildscript {
 
 plugins {
     java
+    `java-library`
     idea
     `maven-publish`
 }

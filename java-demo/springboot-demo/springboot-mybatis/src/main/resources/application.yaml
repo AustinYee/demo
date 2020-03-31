@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    username: root
+    password: Ycq980518
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://yechangqing.com:3306/test_db
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 10

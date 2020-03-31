@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.springboot.aop;
+package com.yechangqing.demo.java.springboot.aop.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;

@@ -1,4 +1,5 @@
-package com.yechangqing.demo.java.springboot.mybatis;
+package com.yechangqing.demo.java.springboot.mybatis.respository;
 
-public class repository {
+public interface MybatisPlusRepository {
+  boolean update(int id, int num);
 }
