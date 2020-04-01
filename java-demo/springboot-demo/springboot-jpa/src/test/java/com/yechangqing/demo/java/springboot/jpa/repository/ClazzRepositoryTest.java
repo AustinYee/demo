@@ -1,7 +1,6 @@
 package com.yechangqing.demo.java.springboot.jpa.repository;
 
 import com.yechangqing.demo.java.springboot.jpa.SpringbootApplicationTest;
-import com.yechangqing.demo.java.springboot.jpa.dao.ClazzRepository;
 import com.yechangqing.demo.java.springboot.jpa.entity.ClazzEntity;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

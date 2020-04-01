@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.springboot.jpa.dao;
+package com.yechangqing.demo.java.springboot.jpa.repository;
 
 import com.yechangqing.demo.java.springboot.jpa.entity.ClazzEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
