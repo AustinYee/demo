@@ -1,17 +1,19 @@
 package com.yechangqing.demo.java.springboot.basic;
 
+<<<<<<< Updated upstream
 import com.yechangqing.demo.java.springboot.basic.event.EventSource;
 import org.junit.Test;
+=======
+>>>>>>> Stashed changes
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
-public class ApplicationTest {
+public abstract class ApplicationTest {
 
+<<<<<<< Updated upstream
   @Autowired private ApplicationEventPublisher applicationEventPublisher;
 
   @Test
@@ -21,4 +23,6 @@ public class ApplicationTest {
     event.setMsg("msg");
     applicationEventPublisher.publishEvent(event);
   }
+=======
+>>>>>>> Stashed changes
 }
