@@ -25,6 +25,14 @@ group = "com.yechangqing"
 version = "1.0.0-SNAPSHOT"
 
 allprojects {
+  configurations {
+    all {
+//      exclude("org.springframework", "spring-jcl")
+//      exclude("org.apache.logging.log4j", "log4j-to-slf4j")
+//      exclude("ch.qos.logback", "logback-classic")
+//      exclude("org.springframework.boot:spring-boot-starter-logging")
+    }
+  }
   apply(plugin = "java")
   apply(plugin = "java-library")
   repositories {

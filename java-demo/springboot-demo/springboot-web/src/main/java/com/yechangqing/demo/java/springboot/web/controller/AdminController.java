@@ -1,18 +1,15 @@
 package com.yechangqing.demo.java.springboot.web.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DemoController {
+@RequestMapping("/admin")
+public class AdminController {
 
-  @GetMapping("/test1")
-  public String test1() {
-    throw new RuntimeException("error");
-  }
-
-  @GetMapping("/test2")
-  public String test2() {
-    return "success";
+  @GetMapping("test")
+  public String test(){
+    return "admin test";
   }
 }

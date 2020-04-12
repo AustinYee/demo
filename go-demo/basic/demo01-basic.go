@@ -11,7 +11,6 @@ func PrintHello() {
 func Variable() {
 	a := 3
 	str := "Hello"
-
 	var b, c = 4, 6
 	println(a, str, b, c)
 }
@@ -25,9 +24,7 @@ type Animal interface {
 type Cat struct {
 }
 
-func (cat Cat) wow() {
-	fmt.Print("miaomiao")
-}
+func (cat Cat) wow() {  
 
 func main() {
 	PrintHello()

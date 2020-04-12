@@ -2,7 +2,7 @@ spring:
   redis:
     port: 6379
     host: localhost
-    password: gllue123
+    password:
     lettuce:
       pool:
         max-active: 8
