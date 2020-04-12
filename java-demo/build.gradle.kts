@@ -14,9 +14,12 @@ buildscript {
 
 plugins {
   java
+<<<<<<< Updated upstream
   idea
   `java-library`
   `maven-publish`
+=======
+>>>>>>> Stashed changes
 }
 
 
