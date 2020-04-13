@@ -6,7 +6,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TestBean implements InitializingBean, BeanPostProcessor {
+public class TestBean implements InitializingBean, BeanPostProcessor{
   public TestBean() {
     System.out.println("Construction function");
   }

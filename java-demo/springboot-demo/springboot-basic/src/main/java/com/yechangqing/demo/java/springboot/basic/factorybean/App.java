@@ -1,7 +1,7 @@
-package com.yechangqing.demo.java.springboot.basic.config;
+package com.yechangqing.demo.java.springboot.basic.factorybean;
 
 public class App {
-  private final int id;
+  private int id;
 
   public App(int id) {
     this.id = id;

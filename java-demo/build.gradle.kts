@@ -13,16 +13,10 @@ buildscript {
 }
 
 plugins {
-  java
-<<<<<<< Updated upstream
   idea
   `java-library`
   `maven-publish`
-=======
->>>>>>> Stashed changes
 }
-
-
 
 group = "com.yechangqing"
 version = "1.0.0-SNAPSHOT"
