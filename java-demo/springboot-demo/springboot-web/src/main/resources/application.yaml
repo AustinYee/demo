@@ -1,3 +1,6 @@
 server:
-  servlet:
-    context-path: /demo
+  port: 8080
+
+web:
+  security:
+    excludeUrlPatterns: /metrics, /admin/test
