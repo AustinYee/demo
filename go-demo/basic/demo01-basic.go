@@ -24,8 +24,8 @@ type Animal interface {
 type Cat struct {
 }
 
-func (cat Cat) wow() {  
-
+func (cat Cat) wow() {
+}
 func main() {
 	PrintHello()
 	Variable()

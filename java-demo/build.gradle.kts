@@ -14,12 +14,9 @@ buildscript {
 
 plugins {
   java
-<<<<<<< Updated upstream
   idea
   `java-library`
   `maven-publish`
-=======
->>>>>>> Stashed changes
 }
 
 
@@ -36,7 +33,6 @@ allprojects {
 //      exclude("org.springframework.boot:spring-boot-starter-logging")
     }
   }
-  apply(plugin = "java")
   apply(plugin = "java-library")
   repositories {
     maven("http://maven.aliyun.com/nexus/content/groups/public/")
