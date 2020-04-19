@@ -3,7 +3,6 @@ spring:
     bootstrap-servers: yechangqing.com:9092
     consumer:
       group-id: kafka-demo
-    listener:
 logging:
   level:
     root: INFO

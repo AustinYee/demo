@@ -17,18 +17,13 @@ public class KafkaApplicationTest {
 
   @Autowired private KafkaTemplate<String, String> kafkaTemplate;
 
-  @KafkaListener(topics = TOPIC, groupId = "kafka-demo")
-  public void consumer(ConsumerRecord<String, String> record) {
-    System.out.println(record);
-  }
+//  @KafkaListener(topics = TOPIC, groupId = "kafka-demo")
+//  public void consumer(ConsumerRecord<String, String> record) {
+//    System.out.println(record);
+//  }
 
   @Test
   public void test() {
-    kafkaTemplate.send(TOPIC, "test");
-    try {
-      Thread.sleep(10000);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
+    kafkaTemplate.send("kafka-test", "test");
   }
 }
