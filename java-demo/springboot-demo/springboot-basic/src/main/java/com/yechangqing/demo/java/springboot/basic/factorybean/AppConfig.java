@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @ConditionalOnProperty(
   name = "connect.accountercenter",
   havingValue = "true",
-  matchIfMissing = false)
+  matchIfMissing = true)
 public class AppConfig {
 
   @Bean

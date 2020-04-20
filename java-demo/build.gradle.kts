@@ -27,7 +27,7 @@ allprojects {
 //      exclude("org.springframework", "spring-jcl")
 //      exclude("org.apache.logging.log4j", "log4j-to-slf4j")
 //      exclude("ch.qos.logback", "logback-classic")
-//      exclude("org.springframework.boot:spring-boot-starter-logging")
+      exclude("org.springframework.boot", "spring-boot-starter-logging")
     }
   }
   apply(plugin = "java")

@@ -1,21 +1,21 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.3.31'
+  kotlin("jvm") version "1.3.41"
+  id("com.google.protobuf") version "0.8.10"
 }
 
-group 'com.yechangqing'
-version '1.0.0-SNAPSHOT'
+group = "com.yechangqing"
+version = "1.0.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+  implementation(kotlin("stdlib-jdk8"))
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+tasks.withType<KotlinCompile> {
+  kotlinOptions.jvmTarget = "1.8"
 }
