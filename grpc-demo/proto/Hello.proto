@@ -1,4 +1,5 @@
 syntax = "proto3";
+option java_package="com.yechangqing.demo.grpc.api";
 
 // The greeting service definition.
 service Greeter {
