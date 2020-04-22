@@ -1,8 +1,11 @@
 buildscript {
   repositories {
-    maven("http://maven.aliyun.com/nexus/content/groups/public/")
-    jcenter()
+    mavenLocal()
+    maven("https://maven.aliyun.com/repository/spring")
+    maven("https://maven.aliyun.com/repository/spring-plugin")
+    maven("https://maven.aliyun.com/repository/public")
     mavenCentral()
+    jcenter()
   }
 
   dependencies {
@@ -33,7 +36,11 @@ allprojects {
   apply(plugin = "java")
   apply(plugin = "java-library")
   repositories {
-    maven("http://maven.aliyun.com/nexus/content/groups/public/")
+    mavenLocal()
+    maven("https://maven.aliyun.com/repository/spring")
+    maven("https://maven.aliyun.com/repository/spring-plugin")
+    maven("https://maven.aliyun.com/repository/public")
     mavenCentral()
+    jcenter()
   }
 }

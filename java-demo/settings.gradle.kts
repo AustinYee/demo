@@ -11,7 +11,6 @@ include(
         ":springboot-demo:springboot-kafka",
         ":springboot-demo:springboot-mongo",
         ":springboot-demo:springboot-web",
-        ":springboot-demo:springboot-cache",
         ":springboot-demo:springboot-aop",
         ":springboot-demo:springboot-sharding-jdbc",
         ":springcloud-demo:springcloud-eureka",
