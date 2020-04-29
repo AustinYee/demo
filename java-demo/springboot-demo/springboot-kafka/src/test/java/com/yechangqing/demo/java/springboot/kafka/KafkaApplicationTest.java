@@ -17,10 +17,10 @@ public class KafkaApplicationTest {
 
   @Autowired private KafkaTemplate<String, String> kafkaTemplate;
 
-//  @KafkaListener(topics = TOPIC, groupId = "kafka-demo")
-//  public void consumer(ConsumerRecord<String, String> record) {
-//    System.out.println(record);
-//  }
+  @KafkaListener(topics = TOPIC, groupId = "kafka-demo")
+  public void consumer(ConsumerRecord<String, String> record) {
+    System.out.println(record);
+  }
 
   @Test
   public void test() {
