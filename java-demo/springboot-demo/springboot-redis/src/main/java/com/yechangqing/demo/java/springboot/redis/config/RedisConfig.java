@@ -1,6 +1,7 @@
 package com.yechangqing.demo.java.springboot.redis.config;
 
 import com.alibaba.fastjson.support.spring.GenericFastJsonRedisSerializer;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.caffeine.CaffeineCacheManager;
@@ -9,26 +10,41 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
+import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.io.Serializable;
 
 @Configuration
 public class RedisConfig extends CachingConfigurerSupport {
-  @Bean
-  public RedisTemplate<String, Serializable> redisTemplate(
-      LettuceConnectionFactory connectionFactory) {
+
+  @Bean("redisTemplate")
+  @ConditionalOnMissingBean(name = "redisTemplate")
+  public RedisTemplate<String, Serializable> createRedisTemplate(RedisConnectionFactory factory) {
     RedisTemplate<String, Serializable> redisTemplate = new RedisTemplate<>();
-    redisTemplate.setKeySerializer(new StringRedisSerializer());
+    redisTemplate.setKeySerializer(RedisSerializer.string());
     redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+    redisTemplate.setHashKeySerializer(new GenericJackson2JsonRedisSerializer());
     redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
-    redisTemplate.setConnectionFactory(connectionFactory);
+    redisTemplate.setConnectionFactory(factory);
     return redisTemplate;
   }
+
+//  @Bean
+//  public RedisTemplate<String, Serializable> redisTemplate(
+//      LettuceConnectionFactory connectionFactory) {
+//    RedisTemplate<String, Serializable> redisTemplate = new RedisTemplate<>();
+//    redisTemplate.setKeySerializer(new StringRedisSerializer());
+//    redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+//    redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
+//    redisTemplate.setConnectionFactory(connectionFactory);
+//    return redisTemplate;
+//  }
 
   @Bean(Cachekey.REDIS_CACHE_MANAGET)
   @Primary

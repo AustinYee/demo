@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class AspectDemo {
 
-  @Before("execution(public * com.yechangqing.demo.java.springboot.aop.*.*(..))")
+  @Before("@annotation(AopTest)")
   public void before(JoinPoint point) {
     System.out.println(point);
     System.out.println("before");
