@@ -5,15 +5,15 @@ import (
 	"time"
 )
 
-func f(){
-	for i := 0;i<10;i++ {
+func f() {
+	for i := 0; i < 10; i++ {
 		fmt.Println("f1", i)
 		time.Sleep(2 * time.Second)
 	}
 }
 
-func f2(){
-	for i := 0;i<10;i++ {
+func f2() {
+	for i := 0; i < 10; i++ {
 		fmt.Println("f2", i)
 		time.Sleep(2 * time.Second)
 	}

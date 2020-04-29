@@ -26,6 +26,7 @@ type Cat struct {
 
 func (cat Cat) wow() {
 }
+
 func main() {
 	PrintHello()
 	Variable()

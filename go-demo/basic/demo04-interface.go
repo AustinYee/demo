@@ -8,14 +8,13 @@ type Person interface {
 
 type Man struct {
 	name string
-	age int
+	age  int
 	data interface{}
 }
 
-func (man Man)  sex() string{
+func (man Man) sex() string {
 	return "test man"
 }
-
 
 func main() {
 	person := new(Man)

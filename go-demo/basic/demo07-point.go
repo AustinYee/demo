@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func test(vari *int){
+func test(vari *int) {
 	*vari = 10
 }
 
@@ -30,7 +30,7 @@ func main() {
 
 	fmt.Println(a, b, c)
 
-	array := []int{1,2,3,4}
+	array := []int{1, 2, 3, 4}
 	fmt.Println(array)
 	var pp *int = &array[0]
 	fmt.Print(pp)
