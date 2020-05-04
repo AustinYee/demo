@@ -21,7 +21,8 @@ func testHTTP(w http.ResponseWriter, req *http.Request) {
 	fmt.Print(form)
 }
 
-func main() {
+func init() {
+	println("asdasda")
 	http.HandleFunc("/test", testHTTP)
 	http.ListenAndServe(":8080", nil)
 }

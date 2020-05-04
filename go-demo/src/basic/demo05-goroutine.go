@@ -19,7 +19,7 @@ func f2() {
 	}
 }
 
-func main() {
+func init() {
 	go f()
 	go f2()
 	time.Sleep(10 * time.Second)

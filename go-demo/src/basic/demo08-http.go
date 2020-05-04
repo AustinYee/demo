@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func init() {
 	res, _ := http.Get("https://csm.service.gllue.net/actuator")
 	defer res.Body.Close()
 	body, _ := ioutil.ReadAll(res.Body)
