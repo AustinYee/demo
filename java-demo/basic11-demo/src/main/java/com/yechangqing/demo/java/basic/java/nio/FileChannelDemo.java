@@ -4,6 +4,6 @@ import java.io.IOException;
 
 public class FileChannelDemo {
   public static void main(String[] args) throws IOException {
-   var classpath = FileChannelDemo.class.getResource("/").getPath();
+
   }
 }

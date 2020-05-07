@@ -5,7 +5,7 @@ func add(a, b int) int {
 	return a + b
 }
 
-// Pulbic methoc
+// Add Pulbic method
 func Add(a, b int) int {
 	return a + b
 }
