@@ -1,13 +1,14 @@
 package com.yechangqing.demo.java.springboot.web.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
 
-  @GetMapping("/test1")
-  public String test1() {
+  @PostMapping("/test1/{id}/{name}")
+  public String test1(TestVo testVo) {
     throw new RuntimeException("error");
   }
 
