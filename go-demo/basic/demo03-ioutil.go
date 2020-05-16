@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func init() {
+func main() {
 	file, err := os.Open("./goio_demo")
 	if err != nil {
 		log.Fatal(err)

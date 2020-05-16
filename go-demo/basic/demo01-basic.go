@@ -27,7 +27,7 @@ type Cat struct {
 func (cat Cat) wow() {
 }
 
-func init() {
+func main() {
 	PrintHello()
 	Variable()
 

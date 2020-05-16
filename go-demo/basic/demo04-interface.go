@@ -16,7 +16,7 @@ func (man Man) sex() string {
 	return "test man"
 }
 
-func init() {
+func main() {
 	person := new(Man)
 	str := person.sex()
 	fmt.Print(str)

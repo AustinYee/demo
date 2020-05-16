@@ -13,6 +13,6 @@ func errorTest(x int) (int, error) {
 	return 1, nil
 }
 
-func init() {
+func main() {
 	errorTest(-1)
 }

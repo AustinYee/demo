@@ -6,7 +6,7 @@ func test(vari *int) {
 	*vari = 10
 }
 
-func init() {
+func main() {
 	var a int = 10
 	fmt.Println(a)
 	fmt.Println(&a)
