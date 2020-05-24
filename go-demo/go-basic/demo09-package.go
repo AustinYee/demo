@@ -1,8 +1,8 @@
 package main
 
 import (
-	"basic/packagetest"
 	"fmt"
+	"go-basic/packagetest"
 )
 
 func main() {

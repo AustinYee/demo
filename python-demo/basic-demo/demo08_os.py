@@ -8,3 +8,4 @@ def getRootPath():
 
 if __name__ == '__main__':
     getRootPath()
+    print(os.getcwd())

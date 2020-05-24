@@ -1,5 +1,5 @@
 import collections
-import packagetest.test
+import pack.test as test
 
 Student = collections.namedtuple('Student', ['name', 'age'])
 
@@ -32,5 +32,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    print(packagetest.test.a)
+    print(test.a)
     print("%s %d world" % ("hello", 1))

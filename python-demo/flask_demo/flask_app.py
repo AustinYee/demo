@@ -1,8 +1,11 @@
-from flask import Flask
 import json
-import flask_demo.flask_app2 as app2
+
+from flask import Flask
+
+import flask_app2 as app2
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def hello_world():
@@ -17,3 +20,4 @@ def get_json_data():
 
 if __name__ == '__main__':
     app.run()
+    print(app2.a)
