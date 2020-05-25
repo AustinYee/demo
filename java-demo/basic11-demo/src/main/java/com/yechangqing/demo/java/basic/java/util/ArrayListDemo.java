@@ -6,6 +6,5 @@ public class ArrayListDemo {
   public static void main(String[] args) {
     var list = new ArrayList<Integer>();
     System.out.println(list.size());
-
   }
 }
