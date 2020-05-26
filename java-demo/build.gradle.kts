@@ -9,7 +9,7 @@ buildscript {
   }
 
   dependencies {
-    classpath("org.springframework.boot", "spring-boot-gradle-plugin", "2.2.0.RELEASE")
+    classpath("org.springframework.boot", "spring-boot-gradle-plugin", "2.3.0.RELEASE")
     classpath("io.freefair.gradle", "lombok-plugin", "3.2.1")
     classpath("com.diffplug.spotless", "spotless-plugin-gradle", "3.25.0")
   }
