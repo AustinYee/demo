@@ -12,13 +12,14 @@ include(
   ":springboot-demo:springboot-mongo",
   ":springboot-demo:springboot-web",
   ":springboot-demo:springboot-aop",
-  ":springboot-demo:springboot-ddd",
+  ":springboot-demo:springboot-sharding-jdbc",
   ":springcloud-demo:springcloud-eureka",
-  "basic",
+  "basic-openjdk8",
+  "basic-openjdk11",
   "mycat-demo",
   "netty-demo",
   "java-advance",
   "kotlin-demo",
-  "groovy-demo"
-
+  "groovy-demo",
+  "gradle-arche"
 )
