@@ -35,4 +35,7 @@ allprojects {
     mavenCentral()
     jcenter()
   }
+  tasks.test{
+    useJUnitPlatform()
+  }
 }

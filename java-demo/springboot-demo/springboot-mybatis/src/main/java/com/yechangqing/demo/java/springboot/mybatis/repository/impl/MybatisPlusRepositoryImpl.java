@@ -1,9 +1,9 @@
-package com.yechangqing.demo.java.springboot.mybatis.respository.impl;
+package com.yechangqing.demo.java.springboot.mybatis.repository.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yechangqing.demo.java.springboot.mybatis.entity.AccountEntity;
 import com.yechangqing.demo.java.springboot.mybatis.mapper.MybatisPlusDemoMapper;
-import com.yechangqing.demo.java.springboot.mybatis.respository.MybatisPlusRepository;
+import com.yechangqing.demo.java.springboot.mybatis.repository.MybatisPlusRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
