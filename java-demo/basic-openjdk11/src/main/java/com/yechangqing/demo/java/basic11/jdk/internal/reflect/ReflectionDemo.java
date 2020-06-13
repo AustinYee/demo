@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.basic.jdk.internal.reflect;
+package com.yechangqing.demo.java.basic11.jdk.internal.reflect;
 
 public class ReflectionDemo {
 

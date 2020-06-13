@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.basic.java.math;
+package com.yechangqing.demo.java.basic11.java.math;
 
 import java.math.BigDecimal;
 

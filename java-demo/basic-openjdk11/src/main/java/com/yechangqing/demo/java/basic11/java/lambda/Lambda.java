@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.basic.java.lambda;
+package com.yechangqing.demo.java.basic11.java.lambda;
 
 import java.util.function.Consumer;
 
