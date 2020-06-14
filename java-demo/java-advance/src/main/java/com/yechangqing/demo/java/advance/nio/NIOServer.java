@@ -12,6 +12,7 @@ public class NIOServer {
         ServerSocket serverSocket = serverSC.socket();
         serverSocket.bind(new InetSocketAddress("localhost", 8888));
         Socket socket = serverSocket.accept();
+        
     }
     
 }
