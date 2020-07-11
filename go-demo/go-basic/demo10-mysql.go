@@ -3,6 +3,7 @@ package main
 import (
 	"database/sql"
 	"fmt"
+
 	_ "github.com/go-sql-driver/mysql"
 )
 
@@ -12,17 +13,17 @@ type User struct {
 }
 
 type result struct {
-	code int
+	code   int
 	messge string
-	data interface{}
+	data   interface{}
 }
 
 func main() {
-	db, err := sql.Open("mysql", "root:ycq980518@tcp(localhost:3306)/test")
+	db, err := sql.Open("mysql", "root:123456@tcp(yechangqing:3306)/test")
 	if err != nil {
 		fmt.Print("Error:%v", err)
 	}
-	_ , err = db.Exec("insert into test (name) values (?)", "changqing")
+	_, err = db.Exec("insert into test (name) values (?)", "changqing")
 	if err != nil {
 		fmt.Print("Error:%v", err)
 	}

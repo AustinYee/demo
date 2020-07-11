@@ -2,19 +2,20 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/aiscrm/redisgo"
 )
 
 type user struct {
-	Id int
+	Id   int
 	Name string
 }
 
 func main() {
 	redis, _ := redisgo.New(redisgo.Options{
-		Addr: "localhost:6379",
-		Db: 2,
-		Password: "ycq980518",
+		Addr:     "yechangqing.com:6379",
+		Db:       2,
+		Password: "123456",
 	})
 	redis.Set("test", "test", -1)
 	redis.Get("test")
@@ -22,7 +23,7 @@ func main() {
 	fmt.Println(redis.GetString("test"))
 
 	user1 := user{
-		Id: 1,
+		Id:   1,
 		Name: "changqing",
 	}
 
