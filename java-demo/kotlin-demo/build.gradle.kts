@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+  api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
   implementation(kotlin("stdlib-jdk8"))
 }
 

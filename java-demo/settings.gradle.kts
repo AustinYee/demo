@@ -13,12 +13,5 @@ include(
   ":springboot-demo:springboot-web",
   ":springboot-demo:springboot-aop",
   ":springboot-demo:springboot-sharding-jdbc",
-  ":springcloud-demo:springcloud-eureka",
-  "java-basic",
-  "mycat-demo",
-  "netty-demo",
-  "java-advance",
-  "kotlin-demo",
-  "groovy-demo",
-  "gradle-arche"
+  ":springcloud-demo:springcloud-eureka"
 )
