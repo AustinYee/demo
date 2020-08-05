@@ -5,16 +5,17 @@ import java.util.List;
 
 public class MemoryDistributionDemo {
 
-  private List<String> list = new ArrayList<>();
+  private List<Thread> list = new ArrayList<>();
 
-  public void add(String str){
-    list.add(str);
+  public void add(Thread thread) {
+    list.add(thread);
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
     var test = new MemoryDistributionDemo();
-    while(true){
-      test.add("Hello");
+    while (true) {
+      Thread.sleep(50);
+      test.add(new Thread());
     }
   }
 }
