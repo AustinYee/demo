@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.netty.im;
+package com.yechangqing.demo.java.basic.netty.im;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

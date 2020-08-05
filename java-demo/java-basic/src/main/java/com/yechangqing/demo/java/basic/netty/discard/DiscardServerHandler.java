@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.netty.discard;
+package com.yechangqing.demo.java.basic.netty.discard;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
