@@ -17,17 +17,15 @@ public class IMServer {
   public void start() throws InterruptedException {
     NioEventLoopGroup nioEventLoopGroup = new NioEventLoopGroup();
     ServerBootstrap serverBootstrap = new ServerBootstrap();
-    serverBootstrap.group(nioEventLoopGroup)
-      .channel(NioServerSocketChannel.class)
-      .childHandler(new ChannelInitializer<SocketChannel>() {
-
-        @Override
-        protected void initChannel(SocketChannel ch) throws Exception {
-          ch.pipeline().addLast("decoder", new StringDecoder());
-          ch.pipeline().addLast("encoder", new StringEncoder());
-          ch.pipeline().addLast(new ServerStringChannelHandler());
-        }
-      });
+    serverBootstrap.group(nioEventLoopGroup).channel(NioServerSocketChannel.class)
+        .childHandler(new ChannelInitializer<SocketChannel>() {
+          @Override
+          protected void initChannel(SocketChannel ch) throws Exception {
+            ch.pipeline().addLast("decoder", new StringDecoder());
+            ch.pipeline().addLast("encoder", new StringEncoder());
+            ch.pipeline().addLast(new ServerStringChannelHandler());
+          }
+        });
     serverBootstrap.bind(port).sync();
   }
 
