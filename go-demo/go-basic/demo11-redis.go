@@ -13,7 +13,7 @@ type user struct {
 
 func main() {
 	redis, _ := redisgo.New(redisgo.Options{
-		Addr:     "yechangqing.com:6379",
+		Addr:     "redis:6379",
 		Db:       2,
 		Password: "123456",
 	})
@@ -28,7 +28,7 @@ func main() {
 	}
 
 	redis.Set("user", user1, 1000)
-	user2 := &user{}
+	user2 := user{}
 	redis.GetObject("user", user2)
 	fmt.Println("user2", user2)
 }
