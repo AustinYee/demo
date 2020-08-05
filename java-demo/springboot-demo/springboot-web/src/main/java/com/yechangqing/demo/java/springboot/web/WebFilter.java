@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-@Configuration
 public class WebFilter extends HttpFilter implements InitializingBean {
 
   @Value("#{'${web.security.excludeUrlPatterns:/metrics}'}")
