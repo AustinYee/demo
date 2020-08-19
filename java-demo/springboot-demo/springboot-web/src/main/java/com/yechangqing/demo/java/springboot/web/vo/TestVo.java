@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.springboot.web.controller;
+package com.yechangqing.demo.java.springboot.web.vo;
 
 public class TestVo {
   private int id;

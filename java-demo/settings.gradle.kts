@@ -12,6 +12,6 @@ include(
   ":springboot-demo:springboot-mongo",
   ":springboot-demo:springboot-web",
   ":springboot-demo:springboot-aop",
-  ":springboot-demo:springboot-sharding-jdbc",
+  ":springboot-demo:springboot-oauth",
   ":springcloud-demo:springcloud-eureka"
 )

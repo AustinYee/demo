@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/admin")
-public class AdminController {
+public class RouteDemoController {
 
   @GetMapping("test/{code}:test")
   public String test(@PathVariable("code") String code){
