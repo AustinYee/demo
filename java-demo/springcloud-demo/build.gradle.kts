@@ -25,8 +25,18 @@ group = "com.yechangqing"
 version = "1.0.0-SNAPSHOT"
 
 allprojects {
-  apply(plugin = "java")
-  apply(plugin = "java-library")
+  apply(plugin = "org.springframework.boot")
+  apply(plugin = "io.spring.dependency-management")
+
+  dependencies {
+    api("org.springframework.boot", "spring-boot-starter")
+    api("org.springframework.boot", "spring-boot-starter-test")
+    testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.6.0")
+  }
+  configure<JavaPluginConvention> {
+    sourceCompatibility = JavaVersion.VERSION_11
+  }
+
   repositories {
     mavenLocal()
     maven("https://maven.aliyun.com/repository/spring")
@@ -34,8 +44,5 @@ allprojects {
     maven("https://maven.aliyun.com/repository/public")
     mavenCentral()
     jcenter()
-  }
-  tasks.test{
-    useJUnitPlatform()
   }
 }

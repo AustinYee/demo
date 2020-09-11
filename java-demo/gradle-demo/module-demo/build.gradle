@@ -1,8 +1,8 @@
 apply plugin: "java"
 
 dependencies {
-    api(project(":gradle-demo:module-demo1"))
-    api(project(":gradle-demo:module-demo2"))
+    api(project(":module-demo1"))
+    api(project(":module-demo2"))
 }
 
 sourceSets {
