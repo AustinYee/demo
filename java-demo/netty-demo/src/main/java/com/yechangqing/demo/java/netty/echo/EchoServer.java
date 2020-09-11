@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.basic.netty.echo;
+package com.yechangqing.demo.java.netty.echo;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;

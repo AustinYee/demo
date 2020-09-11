@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.basic.netty.discard;
+package com.yechangqing.demo.java.netty.discard;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

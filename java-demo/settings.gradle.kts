@@ -4,6 +4,7 @@ include(
   "gradle-demo:module-demo",
   "gradle-demo:module-demo1",
   "gradle-demo:module-demo2",
+  ":netty-demo",
   ":springboot-demo:springboot-jpa",
   ":springboot-demo:springboot-mybatis",
   ":springboot-demo:springboot-basic",

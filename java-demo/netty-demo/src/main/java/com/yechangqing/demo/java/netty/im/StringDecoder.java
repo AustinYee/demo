@@ -1,4 +1,4 @@
-package com.yechangqing.demo.java.basic.netty.im;
+package com.yechangqing.demo.java.netty.im;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
