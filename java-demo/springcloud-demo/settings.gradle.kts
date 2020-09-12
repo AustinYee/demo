@@ -1,4 +1,4 @@
-rootProject.name = "java-demo"
+rootProject.name = "springcloud-demo"
 include(
   "springcloud-eureka"
 )
