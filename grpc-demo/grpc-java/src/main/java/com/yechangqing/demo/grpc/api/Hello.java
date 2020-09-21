@@ -1184,8 +1184,8 @@ public final class Hello {
       "\n\013Hello.proto\"\034\n\014HelloRequest\022\014\n\004name\030\001 " +
       "\001(\t\"\035\n\nHelloReply\022\017\n\007message\030\001 \001(\t23\n\007Gr" +
       "eeter\022(\n\010SayHello\022\r.HelloRequest\032\013.Hello" +
-      "Reply\"\000B\037\n\035com.yechangqing.demo.grpc.api" +
-      "b\006proto3"
+      "Reply\"\000B,\n\035com.yechangqing.demo.grpc.api" +
+      "Z\013hello;hellob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
